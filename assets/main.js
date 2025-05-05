@@ -6,6 +6,6 @@ const nombreProducto = "bondiolas"
 const precioUnitario = "3000"
 let cantidadDeseada = prompt("Cuantas " + nombreProducto + " quieres comprar?")
 
-precioTotal = precioUnitario * cantidadDeseada
+sumarProductos = precioUnitario * cantidadDeseada
 
-alert("El coste total es de: " + precioTotal)
+alert("El coste total es de: " + sumarProductos)
