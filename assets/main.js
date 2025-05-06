@@ -3,7 +3,7 @@ alert("Alerta desde js")
 console.log("Hola desde main.js")
 
 const nombreProducto = "bondiolas"
-let precioUnitario = "3000"
+const precioUnitario = "3000"
 
 let cantidadDeseada = prompt("Cuantas " + nombreProducto + " quieres comprar?")
 
