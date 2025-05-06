@@ -3,9 +3,16 @@ alert("Alerta desde js")
 console.log("Hola desde main.js")
 
 const nombreProducto = "bondiolas"
-const precioUnitario = "3000"
+let precioUnitario = "3000"
+
 let cantidadDeseada = prompt("Cuantas " + nombreProducto + " quieres comprar?")
 
-sumarProductos = precioUnitario * cantidadDeseada
+function sumarProductos(precioUnitario, cantidadDeseada){
+   
+    let PrecioTotal = precioUnitario * cantidadDeseada
+    console.log("El precio del producto es: " + PrecioTotal)
+    
+}
 
-alert("El coste total es de: " + sumarProductos)
+
+sumarProductos(precioUnitario, cantidadDeseada)
