@@ -37,6 +37,7 @@ for(let i=0; i<Productos.length; i++){
 } */
 
 //Código de Clase 6
+/*
 const producto = {
     nombre: "Camiseta",
     precio: "$9.600",
@@ -51,3 +52,30 @@ producto.categoria = "Calzado";
 delete producto.cantidadDisponible
 
 console.log("Producto 2: " + producto.nombre + ", " + "precio: " + producto.precio + ", " + "categoria: " + producto.categoria + ", " + "cantidad: Sin stock");
+*/
+
+
+
+const baseDeDatos = [
+    {
+        categoria: "Eléctrodomesticos",
+        productos:[
+            {nombre: "calefactor", precio: 259075, descuento: 0.5, },
+            {nombre: "caloventor", precio: 25999, descuento: 0.7, },
+            {nombre: "pava eléctrica", precio: 18250, descuento: 0.7, },
+            {nombre: "estufa eléctrica", precio: 41929, descuento: 0.7, },
+        ]
+    },
+    {
+        categoria: "Herramientas",
+        productos:[
+            {nombre: "Martillo", precio: 20400, descuento: 0.5, },
+            {nombre: "Destornillador", precio: 15600, descuento: 0.7, },
+            {nombre: "Pinza", precio: 13670, descuento: 0.6, },
+            {nombre: "Cutter", precio: 6400, descuento: 0.3, },
+        ]
+    }
+]
+
+baseDeDatos[0].productos[1].precio = 24000
+
