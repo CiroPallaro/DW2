@@ -54,8 +54,7 @@ delete producto.cantidadDisponible
 console.log("Producto 2: " + producto.nombre + ", " + "precio: " + producto.precio + ", " + "categoria: " + producto.categoria + ", " + "cantidad: Sin stock");
 */
 
-
-
+//Código de Clase 8
 const baseDeDatos = [
     {
         categoria: "Eléctrodomesticos",
@@ -78,4 +77,18 @@ const baseDeDatos = [
 ]
 
 baseDeDatos[0].productos[1].precio = 24000
+
+for(const categoria of baseDeDatos){
+    for(const producto of categoria.productos){
+        let productoNombre = document.createElement("h2");
+        let productoPrecio = document.createElement("p");
+        productoNombre.innerHTML = producto.nombre;
+        productoPrecio.innerHTML = "El precio es: $" +producto.precio;
+        console.log(productoNombre.isConnected);
+        console.log(productoPrecio.isConnected);
+        document.body.appendChild(productoNombre);
+        document.body.appendChild(productoPrecio);
+    }
+}
+
 
