@@ -1,6 +1,35 @@
-alert("Alerta desde js")
 
-console.log("Hola desde main.js")
+
+
+//Código de Clase 3
+/*
+const nombreProducto = "bondiolas"
+const precioUnitario = "3000"
+
+let cantidadDeseada = prompt("Cuantas " + nombreProducto + " quieres comprar?")
+let Descuento=precioUnitario*0.10
+let precioDescuento = precioUnitario-Descuento
+
+    function sumarProductosDescuentos(precioDescuento, cantidadDeseada){
+
+        let PrecioTotal = precioDescuento*cantidadDeseada
+
+        alert("El precio del producto es: " + PrecioTotal)
+    }
+
+function sumarProductos(precioUnitario, cantidadDeseada){
+   
+        let PrecioTotal = precioUnitario * cantidadDeseada
+        
+        console.log("El precio del producto es: " + PrecioTotal)
+}
+        if (cantidadDeseada >= 5){
+            
+            sumarProductosDescuentos(precioDescuento, cantidadDeseada)
+        }else{
+            sumarProductos(precioUnitario, cantidadDeseada)
+        }
+*/
 
 //Código de clase 4
 /* 
@@ -55,6 +84,7 @@ console.log("Producto 2: " + producto.nombre + ", " + "precio: " + producto.prec
 */
 
 //Código de Clase 8
+/*
 const baseDeDatos = [
     {
         categoria: "Eléctrodomesticos",
@@ -90,5 +120,27 @@ for(const categoria of baseDeDatos){
         document.body.appendChild(productoPrecio);
     }
 }
+*/
+
+//Código de Clase 9
+
+
+let boton = document.createElement("button");
+boton.innerHTML = "Agregar al carrito";
+boton.setAttribute("id", "btnCarrito");
+console.log(boton);
+console.log(boton.isConnected)
+document.body.appendChild(boton);
+
+boton.addEventListener("click", function() {
+    let contenedor = document.createElement("h3");
+    contenedor.innerHTML = "Ha agregado el producto";
+    console.log(contenedor);
+    console.log(contenedor.isConnected)
+    document.body.appendChild(contenedor)
+})
+
+
+
 
 
