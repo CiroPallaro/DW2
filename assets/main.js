@@ -129,15 +129,15 @@ let boton = document.createElement("button");
 boton.innerHTML = "Agregar al carrito";
 boton.setAttribute("id", "btnCarrito");
 console.log(boton);
-console.log(boton.isConnected)
+console.log(boton.isConnected);
 document.body.appendChild(boton);
 
 boton.addEventListener("click", function() {
     let contenedor = document.createElement("h3");
     contenedor.innerHTML = "Ha agregado el producto";
     console.log(contenedor);
-    console.log(contenedor.isConnected)
-    document.body.appendChild(contenedor)
+    console.log(contenedor.isConnected);
+    document.body.appendChild(contenedor);
 })
 
 
